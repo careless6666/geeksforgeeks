@@ -1,8 +1,8 @@
 ﻿using System.Linq;
-using GG;
+using GG.Easy;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace GGTests
+namespace GGTests.Easy
 {
     [TestClass]
     public class FullPrimeTests

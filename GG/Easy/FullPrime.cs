@@ -4,7 +4,7 @@ using System.Linq;
 
 //Task http://www.geeksforgeeks.org/check-number-full-prime/
 
-namespace GG
+namespace GG.Easy
 {
     public class FullPrime
     {

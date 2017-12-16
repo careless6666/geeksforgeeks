@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="Easy\FullPrime.cs" />
     <Compile Include="Easy\LengthOfLongestBalancedParenthesesPrefix.cs" />
+    <Compile Include="Easy\NarcissisticNumber.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

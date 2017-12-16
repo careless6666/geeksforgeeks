@@ -11,9 +11,12 @@ namespace GG
     {
         static void Main(string[] args)
         {
-            var s = "()(())((()";
-            var res = LengthOfLongestBalancedParenthesesPrefix.Check(s);
-            Console.WriteLine(res);
+            var count = int.Parse(Console.ReadLine());
+            for (var i = 0; i < count; i++)
+            {
+                var res = NarcissisticNumber.Check(int.Parse(Console.ReadLine()));
+                Console.WriteLine(res);
+            }
         }
     }
 }

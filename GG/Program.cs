@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using GG.Easy;
+using GG.School;
 
 namespace GG
 {
@@ -11,12 +12,25 @@ namespace GG
     {
         static void Main(string[] args)
         {
-            var count = int.Parse(Console.ReadLine());
-            for (var i = 0; i < count; i++)
+            var testCounter = int.Parse(Console.ReadLine());
+
+            var listRes = new List<int>();
+
+            for (int i = 0; i < testCounter; i++)
             {
-                var res = NarcissisticNumber.Check(int.Parse(Console.ReadLine()));
-                Console.WriteLine(res);
+                var str = Console.ReadLine().Split(' ');
+
+                var row = int.Parse(str[0]);
+                var col = int.Parse(str[1]);
+
+                var arr = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
+
+                listRes.Add(RowWithMinimumNumberOf1.GetNumber(row, col, arr));
             }
+
+            listRes.ForEach(Console.WriteLine);
+            Console.ReadLine();
         }
     }
 }
+ 
